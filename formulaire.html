@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="style1.css" />
+        <link rel="icon" href="https://compas.limos.fr/le-pigeon-nelson/le-pigeon-nelson-logo.svg" />
+    </head>
+    <body>
+        <header>
+            <div class="titreHeader">
+                <h1>Veuillez remplir le formulaire suivant :</h1>
+            </div>
+            <div class="imageHeader">
+                <img src="https://compas.limos.fr/le-pigeon-nelson/le-pigeon-nelson-logo.svg" alt="image illustrative" />
+            </div>
+        </header>
+        <form action="cible.php" method="post">
+            <div class="element">
+                <fieldset>
+                    <p>
+                        <h3>Choisissez un élément autour de vous dont vous aimeriez connaître le nombre :</h3>
+                        <input type="radio" name="souhait" value="arbre" id="arbre" />
+                        <label for="arbre">Arbre</label>
+                        <input type="radio" name="souhait" value="banc" id="banc" />
+                        <label for="banc">Banc</label>
+                        <input type="radio" name="souhait" value="lampadaire" id="lampadaire" />
+                        <label for="lampadaire">Lampadaire</label>
+                        <input type="radio" name="souhait" value="passage piéton" id="passage piéton" />
+                        <label for="passage piéton">Passage piéton</label>
+                    </p>
+                </fieldset>
+            </div>
+            <div class="rayon">
+                <fieldset>
+                    <p>
+                        <h3>Choisissez un rayon autour de vous (en mètre) :</h3>
+                        <input name="rayon" type="number" min="0" step="5" />
+                    </p>
+                </fieldset>
+                <input type="submit" value="Envoyer" />
+            </div>
+        </form>
+        <footer>
+            <p>
+                © Formulaire
+            </p>
+        </footer>
+    </body>
+</html>

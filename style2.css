@@ -1,0 +1,49 @@
+
+body
+{
+	background-color: #555 ;
+}
+
+h1
+{
+	font-size: 2.5em;
+}
+
+h3
+{
+	font-size: 2em;
+}
+
+header img
+{
+	width: 10% ;
+	height: 10%;
+	margin-bottom: 5%;
+}
+
+footer
+{
+	position: absolute;
+	bottom: 0px;
+	width: 100% ;
+	background-color: #999 ;
+	color: green;
+}
+
+footer>p
+{
+	text-align: center;
+	font-size: 1em;
+}
+
+@media (overflow-inline: scroll)
+{
+	footer
+	{
+		position: relative;
+		bottom: 0px;
+		width: 100% ;
+		background-color: #999 ;
+		color: green;
+	}
+}
